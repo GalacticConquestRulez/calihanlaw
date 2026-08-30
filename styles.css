@@ -685,13 +685,12 @@ body.is-shaking {
 .footer .footer__inner { position: relative; }
 
 .footer__credit {
-  position: absolute;
-  right: -8px;
-  bottom: -44px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 3px;
+  margin: 34px auto 0;
+  width: fit-content;
   text-decoration: none;
   opacity: 0.85;
   transition: opacity 0.25s ease;
@@ -741,10 +740,3 @@ body.is-shaking {
 
 .footer__credit:hover .footer__credit-url { color: #a9b1bd; }
 
-@media (max-width: 860px) {
-  .footer__credit {
-    position: static;
-    margin: 30px auto 0;
-    align-items: center;
-  }
-}
