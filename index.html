@@ -23,6 +23,7 @@
       <a href="#background">Background</a>
       <a href="#practice">Practice Areas</a>
       <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -45,7 +46,7 @@
           <li>International Arbitration</li>
           <li>Franchise &amp; Distribution</li>
         </ul>
-        <button class="justice-btn" id="desireJustice" type="button">Desire Justice?</button>
+        <button class="justice-btn" id="desireJustice" type="button">Justice Starts Here</button>
       </div>
       <figure class="portrait">
         <img src="assets/robert-calihan.jpg" alt="Robert B. Calihan" width="328" height="469" decoding="async">
@@ -58,27 +59,42 @@
       <div class="section__label">
         <h2>The Firm</h2>
         <figure class="scales-fig" aria-hidden="true">
-          <svg class="scales" viewBox="0 0 200 176" width="164" height="144" role="img">
-            <!-- stand -->
-            <rect x="62" y="164" width="76" height="6" rx="3" class="sc-metal"/>
-            <rect x="96.5" y="46" width="7" height="120" rx="3.5" class="sc-metal"/>
-            <circle cx="100" cy="42" r="7" class="sc-metal"/>
+          <svg class="scales" viewBox="0 0 220 210" width="216" height="206" role="img">
+            <defs>
+              <linearGradient id="scBrass" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#d3ab5e"/>
+                <stop offset="1" stop-color="#8f6c33"/>
+              </linearGradient>
+            </defs>
+            <!-- base and column -->
+            <rect x="64" y="196" width="92" height="8" rx="4" fill="url(#scBrass)"/>
+            <rect x="76" y="188" width="68" height="8" rx="4" fill="url(#scBrass)"/>
+            <rect x="106" y="54" width="8" height="136" rx="4" fill="url(#scBrass)"/>
+            <circle cx="110" cy="46" r="8" fill="url(#scBrass)"/>
+            <circle cx="110" cy="30" r="5" fill="url(#scBrass)"/>
+            <rect x="107.5" y="32" width="5" height="16" rx="2.5" fill="url(#scBrass)"/>
             <!-- beam + hanging pans -->
             <g class="sc-beam">
-              <rect x="18" y="38.5" width="164" height="7" rx="3.5" class="sc-metal"/>
+              <rect x="18" y="42" width="184" height="8" rx="4" fill="url(#scBrass)"/>
+              <circle cx="110" cy="46" r="5.5" fill="#f0d9a8"/>
+              <circle cx="30" cy="46" r="4" fill="url(#scBrass)"/>
+              <circle cx="190" cy="46" r="4" fill="url(#scBrass)"/>
               <g class="sc-pan sc-pan--left">
-                <line x1="30" y1="42" x2="16" y2="82" class="sc-chain"/>
-                <line x1="30" y1="42" x2="44" y2="82" class="sc-chain"/>
-                <ellipse cx="30" cy="84" rx="22" ry="5.5" class="sc-dish"/>
+                <line x1="30" y1="47" x2="12" y2="96" class="sc-chain"/>
+                <line x1="30" y1="47" x2="30" y2="98" class="sc-chain"/>
+                <line x1="30" y1="47" x2="48" y2="96" class="sc-chain"/>
+                <ellipse cx="30" cy="99" rx="27" ry="6.5" class="sc-dish"/>
+                <ellipse cx="30" cy="101.5" rx="23" ry="5" class="sc-dish sc-dish--inner"/>
               </g>
               <g class="sc-pan sc-pan--right">
-                <line x1="170" y1="42" x2="156" y2="82" class="sc-chain"/>
-                <line x1="170" y1="42" x2="184" y2="82" class="sc-chain"/>
-                <ellipse cx="170" cy="84" rx="22" ry="5.5" class="sc-dish"/>
+                <line x1="190" y1="47" x2="172" y2="96" class="sc-chain"/>
+                <line x1="190" y1="47" x2="190" y2="98" class="sc-chain"/>
+                <line x1="190" y1="47" x2="208" y2="96" class="sc-chain"/>
+                <ellipse cx="190" cy="99" rx="27" ry="6.5" class="sc-dish"/>
+                <ellipse cx="190" cy="101.5" rx="23" ry="5" class="sc-dish sc-dish--inner"/>
               </g>
             </g>
           </svg>
-          <figcaption class="scales-note">The evidence keeps tipping his way.</figcaption>
         </figure>
       </div>
       <div class="section__body">
@@ -190,6 +206,30 @@
     </div>
   </section>
 
+  <section class="section section--contact" id="contact">
+    <div class="shell grid-2">
+      <div class="section__label">
+        <h2>Contact</h2>
+      </div>
+      <div class="section__body">
+        <p class="contact-phone-wrap">
+          <a class="contact-phone" href="tel:+15852812593">(585) 281-2593</a><br>
+          <a class="contact-email" href="mailto:rcalihan@calihanlaw.com">rcalihan@calihanlaw.com</a>
+        </p>
+        <div class="offices">
+          <div class="office">
+            <h3 class="office__city">Rochester</h3>
+            <p class="office__addr">75 South Clinton Ave, Suite 510<br>Rochester, New York 14604</p>
+          </div>
+          <div class="office">
+            <h3 class="office__city">New York City</h3>
+            <p class="office__addr">127 Riverside Drive<br>New York, New York 10024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -199,38 +239,54 @@
       <span class="wordmark__suffix">PLLC</span>
     </div>
     <p class="footer__note">Robert B. Calihan &middot; Attorney at Law</p>
+    <p class="footer__contact">
+      <a href="tel:+15852812593">(585) 281-2593</a> &middot;
+      <a href="mailto:rcalihan@calihanlaw.com">rcalihan@calihanlaw.com</a>
+    </p>
     <p class="footer__fine">Attorney advertising. Prior results do not guarantee a similar outcome.</p>
   </div>
 </footer>
 
 <div class="gavel-stage" id="gavelStage" hidden aria-hidden="true">
   <div class="gavel-shock" id="gavelShock"></div>
-  <svg class="gavel" id="gavel" viewBox="0 0 340 300" width="380" height="335">
+  <svg class="gavel" id="gavel" viewBox="0 0 460 320" width="540" height="376">
     <defs>
       <linearGradient id="gvWood" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0" stop-color="#8a5a2e"/>
-        <stop offset="0.5" stop-color="#6f4522"/>
-        <stop offset="1" stop-color="#57351a"/>
+        <stop offset="0" stop-color="#9a6836"/>
+        <stop offset="0.42" stop-color="#7a4e26"/>
+        <stop offset="1" stop-color="#4e2f15"/>
+      </linearGradient>
+      <linearGradient id="gvWoodCap" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#84582c"/>
+        <stop offset="1" stop-color="#45280f"/>
       </linearGradient>
       <linearGradient id="gvHandle" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#7d5128"/>
-        <stop offset="1" stop-color="#5a381c"/>
+        <stop offset="0" stop-color="#8f5f30"/>
+        <stop offset="0.5" stop-color="#6b421f"/>
+        <stop offset="1" stop-color="#472a11"/>
       </linearGradient>
       <linearGradient id="gvBand" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0" stop-color="#e2bd75"/>
-        <stop offset="0.5" stop-color="#b8904a"/>
-        <stop offset="1" stop-color="#8f6c33"/>
+        <stop offset="0" stop-color="#f2d492"/>
+        <stop offset="0.35" stop-color="#c99b4e"/>
+        <stop offset="0.75" stop-color="#8f6c33"/>
+        <stop offset="1" stop-color="#6e5226"/>
       </linearGradient>
     </defs>
-    <!-- handle: grip at the right, head at the left -->
-    <rect x="76" y="118" width="196" height="20" rx="10" fill="url(#gvHandle)"/>
-    <rect x="264" y="112" width="26" height="32" rx="9" fill="url(#gvBand)"/>
-    <!-- neck joining handle to head -->
-    <rect x="60" y="110" width="28" height="36" rx="8" fill="#6f4522"/>
-    <!-- head: vertical barrel, faces top and bottom -->
-    <rect x="26" y="52" width="56" height="152" rx="18" fill="url(#gvWood)"/>
-    <rect x="20" y="46" width="68" height="22" rx="9" fill="url(#gvBand)"/>
-    <rect x="20" y="188" width="68" height="22" rx="9" fill="url(#gvBand)"/>
+    <!-- handle: tapers from the neck out to a turned grip -->
+    <polygon points="112,152 402,146 402,174 112,168" fill="url(#gvHandle)"/>
+    <rect x="392" y="140" width="14" height="40" rx="6" fill="url(#gvBand)"/>
+    <rect x="406" y="142" width="26" height="36" rx="12" fill="url(#gvHandle)"/>
+    <circle cx="436" cy="160" r="13" fill="url(#gvWoodCap)"/>
+    <!-- turned collar at the neck -->
+    <rect x="104" y="140" width="16" height="40" rx="7" fill="url(#gvBand)"/>
+    <!-- head: barrel, brass bands, protruding striking faces -->
+    <rect x="46" y="70" width="78" height="180" rx="24" fill="url(#gvWood)"/>
+    <rect x="58" y="82" width="10" height="156" rx="5" fill="#ffffff" opacity="0.10"/>
+    <rect x="86" y="78" width="4" height="164" rx="2" fill="#3a2210" opacity="0.25"/>
+    <rect x="40" y="46" width="90" height="26" rx="10" fill="url(#gvBand)"/>
+    <rect x="40" y="248" width="90" height="26" rx="10" fill="url(#gvBand)"/>
+    <rect x="50" y="24" width="70" height="24" rx="9" fill="url(#gvWoodCap)"/>
+    <rect x="50" y="272" width="70" height="24" rx="9" fill="url(#gvWoodCap)"/>
   </svg>
 </div>
 

@@ -78,9 +78,13 @@
     stage.hidden = false;
 
     if (reduceMotion.matches) {
-      // No swing, no shake — just the ruling.
+      // No swing, no shake — just the ruling, then the call.
       thud();
-      setTimeout(function () { stage.hidden = true; striking = false; }, 400);
+      setTimeout(function () {
+        stage.hidden = true;
+        striking = false;
+        window.location.href = 'tel:+15852812593';
+      }, 450);
       return;
     }
 
@@ -91,6 +95,11 @@
       thud();
       document.body.classList.add('is-shaking');
     }, 810);
+
+    // The gavel has spoken — place the call while it settles.
+    setTimeout(function () {
+      window.location.href = 'tel:+15852812593';
+    }, 1250);
 
     setTimeout(function () {
       stage.classList.remove('is-striking');
