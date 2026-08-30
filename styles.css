@@ -686,3 +686,46 @@ body.is-shaking {
 @media (max-width: 600px) {
   .offices { grid-template-columns: 1fr; gap: 26px; }
 }
+
+/* ---------- Created-by credit ---------- */
+
+.footer .footer__inner { position: relative; }
+
+.footer__credit {
+  position: absolute;
+  right: 32px;
+  bottom: -26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.25s ease;
+}
+
+.footer__credit:hover { opacity: 1; }
+
+.footer__credit-label {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #6f7987;
+}
+
+.footer__credit img { display: block; width: 150px; height: auto; }
+
+.footer__credit-url {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #8b95a3;
+}
+
+.footer__credit:hover .footer__credit-url { color: #c8ccd4; }
+
+@media (max-width: 860px) {
+  .footer__credit {
+    position: static;
+    margin: 34px auto 0;
+  }
+}
